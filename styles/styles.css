@@ -1,0 +1,240 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+
+body{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+/* margin: 10px 10px 10px 20px ; */
+}
+button{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 100px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+
+}
+.upper-header{
+    display: flex;
+    background-color: rgb(17,17,17);
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    
+}
+.upper-header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    ;
+    align-self: center;
+    font-weight: 400;
+    font-size: 17px;
+}
+.upper-nav{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.upper-nav a{
+    color: white;
+    text-decoration: none;
+}
+.lower-header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+}
+.lower-nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.lower-header a{
+    text-decoration: none;
+    color: black;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+div.lower-banner div{
+display: flex;
+align-items: center;
+width: 100%;
+justify-content: space-evenly;
+}
+.left{
+    font-weight: 400;
+    font-size: xx-large;
+}
+.right{
+    font-weight: 400;
+    font-size: xx-large;
+}
+.left a{
+    text-decoration: underline;
+    color: black;
+    font-weight: 200;
+}
+.right a{
+    text-decoration: underline;
+    color: black;
+    font-weight: 200;
+}
+
+.lower2nd-nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.lower2nd-nav a{
+    text-decoration: none;
+    color:  gray;
+    font-size: x-large;
+    font-weight: 800;
+}
+.bestseller {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr ;
+padding-left: 10%; 
+padding-right: 10%; 
+font-size: x-large;
+}
+.timmerbanner{
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: space-evenly;
+padding-top: 100px; 
+padding-bottom: 100px;
+font-size:  20px;
+font-weight: 50;
+}
+.insta{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 150px;
+}
+.instaimg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 30px;
+}
+
+.latest-news2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+.latest-news2 div h2{
+    font-size:20px;
+    font-weight: 800;
+}
+
+.latest-news{
+    margin-top: 30px;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-section ul li a{
+    color: white;
+    text-decoration: none;
+}
+.carousel {
+    position: relative;
+    width: 2000px;
+    height: 900px;
+    
+    overflow: hidden;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+.carousel img {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.carousel img.active {
+    display: block;
+}
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.carousel-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.watch-container {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.time {
+   
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.date {
+    font-size: 24px;
+    color: #555;
+}
